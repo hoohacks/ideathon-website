@@ -1110,6 +1110,34 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0;
 }
 
+#faq .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#faq .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#faq .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#faq .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+
 #faq #faq-list {
   padding: 0;
   list-style: none;
