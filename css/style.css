@@ -1703,3 +1703,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
+
+@media (min-width: 768px){
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .hide-on-desktop {
+    display: block;
+  }
+}
