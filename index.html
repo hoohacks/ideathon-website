@@ -44,6 +44,12 @@
 </head>
 
 <body>
+  <script type="text/javascript">
+    setTimeout(function(){
+      $('#myModal').modal('show');
+    },1000);
+
+  </script>
 
   <!--==========================
     Header
@@ -95,7 +101,29 @@
     </div>
   </section>
 
-  <main id="main">
+  <main id="main" onload="popUp()">
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Looking for HooHacks?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            HooHacks is our primary event, and it's happening March 26-27, 2022!
+            <br>
+            <a>Check it out <a style="color: blue" href="https://hoohacks.io">here!</a></a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--==========================
       About Section
