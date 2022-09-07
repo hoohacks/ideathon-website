@@ -470,7 +470,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro {
     width: 100%;
     height: 100vh;
-    background: url(../img/ideathonheader.png) top center;
+    background: url(../img/ideathon_banner.png) top center;
     background-size: cover;
     overflow: hidden;
     position: relative;
