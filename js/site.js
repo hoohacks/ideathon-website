@@ -75,7 +75,7 @@
 
   var groups = [
     ".lede-block",
-    ".sponsor",
+    ".partners",
     ".takeaway",
     ".run__stop",
     ".tabs",
