@@ -3,739 +3,422 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ideathon by HooHacks</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ideathon &mdash; HooHacks at the University of Virginia</title>
+  <meta name="description"
+    content="The sixth annual Ideathon is a one-day event at UVA where technical and business students form teams, develop an idea with a mentor, and pitch it to a panel of professionals for seed funding.">
+  <meta name="theme-color" content="#0A1230">
 
-  <!-- Favicons -->
-  <link href="img/logo.png" rel="icon">
-  <!-- <link href="img/apple-icon.png" rel="apple-touch-icon"> -->
+  <link rel="icon" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="canonical" href="https://ideathon.hoohacks.io/">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ideathon — HooHacks at the University of Virginia">
+  <meta property="og:description"
+    content="A one-day event at UVA where technical and business students form teams, develop an idea with a mentor, and pitch it to a panel of professionals for seed funding.">
+  <meta property="og:url" content="https://ideathon.hoohacks.io/">
+  <meta property="og:image" content="https://ideathon.hoohacks.io/img/hero-colonnade.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="img/hero-colonnade.webp"
+    imagesrcset="img/hero-colonnade-sm.webp 1100w, img/hero-colonnade.webp 2000w" imagesizes="100vw">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300..700&display=swap"
     rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/venobox/venobox.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: TheEvent
-    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-
-  <style>
-    .contactIcon {
-      font-size: 20px !important;
-      margin-top: 2px !important;
-    }
-  </style>
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
-  <!--
-  <script type="text/javascript">
-    setTimeout(function(){
-      $('#myModal').modal('show');
-    },1000);
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  </script>
-  -->
+  <header class="masthead" id="masthead">
+    <div class="masthead__inner shell">
+      <a class="brand" href="#top" aria-label="Ideathon, home">
+        <svg class="bulb" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path
+            d="M16 4C10.8 4 6.6 8 6.6 13c0 3.1 1.6 5.6 3.6 7.4.8.7 1.3 1.5 1.3 2.4V24h9v-1.2c0-.9.5-1.7 1.3-2.4 2-1.8 3.6-4.3 3.6-7.4C25.4 8 21.2 4 16 4Z"
+            fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" />
+          <rect x="11.6" y="26.3" width="8.8" height="2.7" rx="1.35" fill="currentColor" />
+          <circle class="bulb__spark" cx="16" cy="10.2" r="2" />
+          <rect class="bulb__spark" x="14.2" y="13.8" width="3.6" height="8.4" rx="1.8" />
+        </svg>
+        <span class="brand__word">ideathon</span>
+      </a>
 
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container">
+      <nav class="masthead__nav" id="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <div id="logo" class="pull-left">
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <!-- <a href="#intro" class="scrollto"><img src="img/hoohacks_alternate_logo.png" alt="" title="" style="padding-right: 6px;"></a> -->
-        <!--
-        <a href="#intro" class="scrollto"><img src="img/vvf.png" alt="" title=""></a>
-        -->
+      <div class="masthead__end">
+        <a class="btn btn--sm" href="https://hoohacks.github.io/idea-x/">Register / Sign in</a>
+        <button class="masthead__toggle" id="navToggle" aria-expanded="false" aria-controls="nav">
+          <span class="masthead__toggle-bars" aria-hidden="true"></span>
+          <span class="u-visually-hidden">Menu</span>
+        </button>
       </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <!--<li><a href="#speakers">Speakers</a></li>-->
-          <li><a href="#contact">Contact</a></li>
-          <!-- <li class="buy-tickets"><a href="https://ideathon.hoohacks.io/apply">Apply</a></li> -->
-          <li class="buy-tickets"><a href="https://ideathon.hoohacks.io/login">Log In</a></li>
-          <!--<li class="buy-tickets"><a href="https://forms.gle/tbZvp4mYDRJS9gN39" target="_blank">Student Application</a>-->
-          </li>
-          <!--
-          <li class="buy-tickets"><a href="https://forms.gle/bfJ9uq1pTHfF46yQ8" target="_blank">Mentor Application</a></li>
-          -->
-        </ul>
-      </nav><!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+  </header>
 
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-    <div class="intro-container wow fadeIn">
-      <div>
-        <div class="mb-4 pb-0" style="margin-bottom: 0px !important;">
-          <img src="img\logo_whitestroke.png" alt="The Sixth Annual Ideathon"
-            style="width:clamp(300px,40vw,540px); height:auto" />
-          <div>
-            <p style="font-weight: normal; font-size:medium;">Sponsored By: </p>
-          </div>
-          <a href="https://joinforge.co/launch" target="_blank" style="margin-right: 20px;">
-            <img src="img\forge-linear-primary-reverse.png" alt="Forge @ UVA"
-              style="width:clamp(150px,18vw,220px); height:auto" />
-          </a>
-          <img class="px-1" src="img\honor.png" alt="Honor @ UVA" style="width:clamp(90px,12vw,160px); height:auto" />
-          <img class="px-1" src="img\datascience.png" alt="Data Science @ UVA"
-            style="width:clamp(90px,12vw,160px); height:auto; border-radius: 50%;" />
-          <img class="px-1" src="img\tsglogo.png" alt="Technology strategy group"
-            style="width:clamp(90px,12vw,160px); height:auto; border-radius: 50%;" />
-        </div><br>
-        <p class="mb-4 pb-0">Sunday, October 19, 2025 <br> 10 AM - 7 PM</p>
-      </div>
-      <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-         data-autoplay="true"></a> -->
-      <!-- <a href="https://ideathon.hoohacks.io/apply" class="about-btn scrollto">Apply</a> -->
-      <a href="https://ideathon.hoohacks.io/login" class="about-btn scrollto">Go to App</a>
-    </div>
-  </section>
+  <main id="main">
 
-  <main id="main" onload="popUp()">
+    <section class="hero" id="top">
+      <picture class="hero__photo">
+        <source type="image/webp" srcset="img/hero-colonnade-sm.webp 1100w, img/hero-colonnade.webp 2000w"
+          sizes="100vw">
+        <img src="img/hero-colonnade.jpg" srcset="img/hero-colonnade-sm.jpg 1100w, img/hero-colonnade.jpg 2000w"
+          sizes="100vw" alt="" width="2000" height="1125" fetchpriority="high">
+      </picture>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="false">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Looking for HooHacks?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            HooHacks is our primary event, and it's happening in the end of March!
-            <br>
-            <a>Check it out <a style="color: blue" href="https://hoohacks.io">here!</a></a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+      <div class="hero__inner shell">
+        <p class="eyebrow hero__eyebrow">Sixth annual &middot; HooHacks at UVA</p>
+
+        <h1 class="hero__title">Ideathon</h1>
+
+        <div class="seam" aria-hidden="true">
+          <span class="seam__rule"></span>
+          <span class="seam__node">
+            <svg class="bulb" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <path
+                d="M16 4C10.8 4 6.6 8 6.6 13c0 3.1 1.6 5.6 3.6 7.4.8.7 1.3 1.5 1.3 2.4V24h9v-1.2c0-.9.5-1.7 1.3-2.4 2-1.8 3.6-4.3 3.6-7.4C25.4 8 21.2 4 16 4Z"
+                fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" />
+              <rect x="11.6" y="26.3" width="8.8" height="2.7" rx="1.35" fill="currentColor" />
+              <circle class="bulb__spark" cx="16" cy="10.2" r="2" />
+              <rect class="bulb__spark" x="14.2" y="13.8" width="3.6" height="8.4" rx="1.8" />
+            </svg>
+          </span>
         </div>
-      </div>
-    </div>
 
-    <!--==========================
-      About Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9">
-            <h2 style="color:#f82249">About The Event</h2>
-            <p>The fifth annual Ideathon is an immersive seminar on the intersection between
-              technology and business, geared towards UVA students interested in
-              entrepreneurship. Many students have either the technical or business expertise
-              to start a tech startup, but seldom have both. The Ideathon will bridge the gap
-              between these students to help foster entrepreneurship at UVA.</p>
-            <br />
-            <h4 style="color: white;">At the Ideathon, students will have the opportunity to:</h4>
-            <p>
-              <b style="color:#f82249">Match with students with other skills.</b> Students with technical experience can
-              match with more business minded students. Students with a tech idea can match with students who are
-              looking for a team to work with.
-              <br />
-              <br />
-              <b style="color:#f82249">Meet with and form a lasting bond with a mentor.</b> Teams will meet with
-              mentors,
-              either UVA business or engineering faculty, or professionals in the industry, about their ideas.
-              Mentors and students will swap information and continue to build their relationship and idea well past the
-              Ideathon.
-              <br />
-              <br />
-              <b style="color:#f82249">Attend workshops by experts on digital innovation and marketing.</b> Both
-              technical and business-minded students can learn from the workshops from UVA faculty and industry
-              professionals,
-              on what it takes to build a tech startup.
-              <br />
-              <br />
-              <b style="color:#f82249">Pitch their ideas to a Shark Tank-esque board and to their fellow students for
-                feedback and seed money. </b>
-              Students will be able to pitch their ideas in both an expo experiment, as well as to a panel of
-              professionals for feedback and seed money.
+        <p class="hero__lede">The Ideathon is a one-day event at UVA where technical and business students form
+          teams, develop a single idea with a mentor, and pitch it to a panel of professionals for seed funding.
+          Bring an idea, or bring the skills an idea needs.</p>
+
+        <div class="hero__actions">
+          <a class="btn" href="https://hoohacks.github.io/idea-x/">Register / Sign in</a>
+          <a class="btn btn--ghost" href="#about">How the day works</a>
+        </div>
+
+        <p class="hero__note">Applications are open now for Sunday, October 25.</p>
+      </div>
+
+      <dl class="factbar shell">
+        <div class="factbar__item">
+          <dt>Next edition</dt>
+          <dd>Sunday, October 25, 2026</dd>
+        </div>
+        <div class="factbar__item">
+          <dt>Where</dt>
+          <dd>Rice Hall, UVA</dd>
+        </div>
+        <div class="factbar__item">
+          <dt>Hours</dt>
+          <dd>10am to 7pm, one day</dd>
+        </div>
+        <div class="factbar__item">
+          <dt>Open to</dt>
+          <dd>Every UVA student</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section section--tight on-paper" aria-labelledby="supporters-title">
+      <div class="shell">
+        <h2 class="eyebrow eyebrow--rule" id="supporters-title">Past supporters</h2>
+
+        <ul class="partners">
+          <li class="partners__item">
+            <a href="https://joinforge.co/launch" target="_blank" rel="noopener">
+              <img class="partners__logo" style="--logo-h: 30px" src="img/sponsor-forge.png" alt="Forge" width="484"
+                height="136" loading="lazy">
+            </a>
+          </li>
+          <li class="partners__item">
+            <img class="partners__logo" style="--logo-h: 54px" src="img/sponsor-honor.png" alt="Honor at UVA"
+              width="228" height="228" loading="lazy">
+          </li>
+          <li class="partners__item">
+            <img class="partners__logo" style="--logo-h: 46px" src="img/sponsor-datascience.png"
+              alt="UVA School of Data Science" width="408" height="316" loading="lazy">
+          </li>
+          <li class="partners__item">
+            <img class="partners__logo" style="--logo-h: 38px" src="img/sponsor-tsg.png"
+              alt="Technology Strategy Group" width="417" height="214" loading="lazy">
+          </li>
+        </ul>
+
+        <p class="partners__note">Sponsors send mentors and speakers, and meet UVA students who are serious about
+          building something. Write to
+          <a href="mailto:ideathon@hoohacks.io?subject=Ideathon%202026%20sponsorship">ideathon@hoohacks.io</a> to
+          support the 2026 edition.</p>
+      </div>
+    </section>
+
+    <section class="section on-paper" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="lede-block">
+          <p class="eyebrow">About</p>
+          <h2 class="h2" id="about-title">Why the Ideathon exists</h2>
+          <p class="lede">The Ideathon is a one-day program on the intersection of technology and business, built for
+            UVA students who want to start something. Plenty of students can build a product and plenty can take
+            one to market, but not many can do both. The day puts those people on the same teams and gives them
+            nine hours to get from a rough idea to a pitch.</p>
+        </div>
+
+        <ul class="takeaways">
+          <li class="takeaway">
+            <h3>Find a team</h3>
+            <p>Technical students team up with business students. Bring an idea and find people who will
+              pressure-test it, or bring your skills and join a team that needs them. A morning workshop is there
+              to help the pairing happen.</p>
+          </li>
+          <li class="takeaway">
+            <h3>Meet a mentor</h3>
+            <p>Every team meets a mentor for twenty to thirty minutes, either UVA business and engineering faculty
+              or professionals working in industry. It is a short conversation that often changes the direction of
+              the project, and many teams stay in touch long after the day ends.</p>
+          </li>
+          <li class="takeaway">
+            <h3>Learn from experts</h3>
+            <p>Workshops run by UVA faculty and industry professionals cover digital innovation and marketing.
+              Technical students come away with a clearer view of the market side, and business students with a
+              better sense of what is realistic to build.</p>
+          </li>
+          <li class="takeaway">
+            <h3>Pitch for funding</h3>
+            <p>Teams pitch at the student expo and then to a panel of professionals, Shark Tank style. Every team
+              gets feedback, and the strongest ideas leave with seed money to keep going.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section on-ink" id="schedule" aria-labelledby="schedule-title">
+      <div class="shell">
+        <div class="lede-block">
+          <p class="eyebrow">Schedule</p>
+          <h2 class="h2" id="schedule-title">How the day runs</h2>
+          <p class="lede">This is the schedule from the most recent Ideathon. The 2026 edition runs on Sunday, October 25 and
+            follows the same shape, with exact times confirmed closer to the day.</p>
+        </div>
+
+        <ol class="run">
+          <li class="run__stop">
+            <p class="run__time"><time>10:00<span>am</span></time><span class="run__dash">&ndash;</span><time>10:45<span>am</span></time>
             </p>
-            <br />
-
-          </div>
-
-          <div class="col-lg-3">
-            <h3 style="color:#f82249">Where</h3>
-
-            <!-- <p>UVA Campus, Rice Hall</p>
-            <p><a href="https://maps.app.goo.gl/x9NnmgeAj2X4wG8L8">Rice Hall, 85 Engineer's way, Charlottesville, VA 22903</a></p> -->
-
-            <p>Rice Hall</p>
-            <br />
-            <h3 style="color:#f82249">When</h3>
-            <p>Sunday, October 19, 2025</p>
-          </div>
-
-
-          <div class="row hide-on-desktop">
-            <div class="col-lg-12">
-              <ul class="nav-menu">
-                <center>
-                  <li class="buy-tickets"><a href="https://ideathon.hoohacks.io/apply" target="_blank">Student
-                      Application</a></li>
-                </center>
-              </ul>
+            <div class="run__body">
+              <h3>Check-in and breakfast</h3>
+              <p>Check in at the front of Rice Hall, then pick up breakfast from Bodo&rsquo;s Bagels in Davis
+                Commons.</p>
             </div>
-          </div>
-          <!--
-          <div class="row hide-on-desktop">
-            <div class="col-lg-12">
-              <ul class="nav-menu">
-                <center>
-                  <li class="buy-tickets"><a href="https://forms.gle/bfJ9uq1pTHfF46yQ8" target="_blank">Mentor
-                      Application</a></li>
-                </center>
-              </ul>
-            </div>
-          </div>
-          -->
-          <div class="row" style="width: 100%; padding: 15px;">
-            <div class="col-lg-12">
-
-              <!--<h4 style="color:white; text-align:center">Applications close on Wednesday, September 16th!</h4>-->
-
-            </div>
-          </div>
-
-        </div>
-    </section>
-
-    <!--==========================
-      Schedule Section
-      //Taken out temporarily
-    ============================-->
-    <section id="schedule" class="section-with-bg">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h2>Event Schedule</h2>
-        </div>
-
-
-        <!-- <div class="row justify-content-center">
-          <h3>Schedule Coming Soon!</h3>
-        </div> -->
-
-        <!--<h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius necessitatibus voluptatem quis labore perspiciatis quia.</h3>-->
-
-        <div class="tab-content row justify-content-center px-3">
-
-
-          <div class="row justify-content-center">
-
-
-            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>10:00AM- <br> 10:45AM</time></div>
-                <div class="col-md-10">
-                  <h4>Check-In + Breakfast</h4>
-                  <p>Show up and get signed into the event! Then, have some free Bodo's Bagels! Check-In (Front of
-                    Rice); Breakfast (Davis Commons)</p>
-                </div>
-              </div>
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>11:00AM</time></div>
-                <div class="col-md-10">
-                  <h4>Opening Ceremony + Keynote</h4>
-                  <p>A brief introduction to the event and messages from our sponsors. (Rice 130)</p>
-                </div>
-              </div>
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>11:30AM- <br> 12:00PM</time></div>
-                <div class="col-md-10">
-                  <h4>Workshop 1: Team Building</h4>
-                  <p>Join an existing idea, or find people to help you out with the ones you have! (Rice 130)</p>
-                </div>
-              </div>
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>12:00PM- <br> 1:00PM</time></div>
-                <div class="col-md-10">
-                  <h4>Lunch</h4>
-                  <p>Rice Basement</p>
-                </div>
-              </div>
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>1:30PM</time></div>
-                <div class="col-md-10">
-                  <h4>Founder's Fair</h4>
-                  <p>Meet with Founders and learn about what they're working on! (Rice 032)</p>
-                </div>
-              </div>
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>4:30PM</time></div>
-                <div class="col-md-10">
-                  <h4>SUBMISSIONS DUE (and a Small Snack)</h4>
-                  <p>Finish your presentations, prep your pitch, and grab a snack (Rice Basement)!</p>
-                </div>
-              </div>
-
-              <!-- <div class="row schedule-item">
-              <div class="col-md-2"><time>4:45PM</time></div>
-              <div class="col-md-10">
-                <h4>Closing Ceremony</h4>
-                  <p>Finish your presentations, prep your pitch!</p>
-              </div>
-            </div>  -->
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>5:00PM- <br> 7:00PM</time></div>
-                <div class="col-md-10">
-                  <h4>Pitch Presentations and Judging</h4>
-                  <p>Show off your hard work and great ideas to our judges!</p>
-                </div>
-              </div>
-
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>7:00PM</time></div>
-                <div class="col-md-10">
-                  <h4>Closing Ceremony</h4>
-                  <p>Celebrate the hard work of all participants and announce the winners!</p>
-                </div>
-              </div>
-
-            </div>
-
-
-          </div>
-
-
-
-        </div>
-
-    </section>
-
-    <!--==========================
-      Venue Section
-    ============================-->
-
-    <!--    THIS WAS REMOVED FROM ORIGINAL SITE     -->
-
-    <!--==========================
-      Hotels Section
-    ============================-->
-
-    <!--    THIS WAS REMOVED FROM ORIGINAL SITE     -->
-
-    <!--==========================
-      Gallery Section
-    ============================-->
-
-    <!--    THIS WAS REMOVED FROM ORIGINAL SITE     -->
-
-    <!--==========================
-      Sponsors Section
-    ============================-->
-
-    <!--    THIS WAS REMOVED FROM ORIGINAL SITE     -->
-
-
-    <!--==========================
-      F.A.Q Section
-    ============================-->
-
-    <section id="faq" class="wow fadeInUp">
-
-      <div class="container">
-
-        <div class="section-header">
-          <h2>F.A.Q. </h2>
-        </div>
-
-        <ul class="nav nav-tabs" role="tablist" style="padding-bottom: 10px;">
-          <li class="nav-item" style="padding-bottom: 10px;">
-            <a class="nav-link active" href="#studentfaq" role="tab" data-toggle="tab">Student</a>
           </li>
-          <li class="nav-item" style="padding-bottom: 10px;">
-            <a class="nav-link" href="#mentorfaq" role="tab" data-toggle="tab">Mentor</a>
+          <li class="run__stop">
+            <p class="run__time"><time>11:00<span>am</span></time></p>
+            <div class="run__body">
+              <h3>Opening ceremony and keynote</h3>
+              <p>A short introduction to the day and remarks from our sponsors. Rice 130.</p>
+            </div>
           </li>
-          <li class="nav-item" style="padding-bottom: 10px;">
-            <a class="nav-link" href="#sponsorfaq" role="tab" data-toggle="tab">Sponsor</a>
+          <li class="run__stop">
+            <p class="run__time"><time>11:30<span>am</span></time><span class="run__dash">&ndash;</span><time>12:00<span>pm</span></time>
+            </p>
+            <div class="run__body">
+              <h3>Workshop: building a team</h3>
+              <p>Join an idea that needs your skills, or find teammates for one you brought with you. Rice 130.</p>
+            </div>
           </li>
-        </ul>
-
-        <div class="tab-content row justify-content-center">
-
-
-          <!-- Student FAQ -->
-
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="studentfaq">
-
-            <div class="col-lg-12">
-              <ul id="faq-list">
-
-                <li>
-                  <a data-toggle="collapse" href="#studentfaq3" class="collapsed">Why should students come to this
-                    event? What will they get out of it?<i class="fa fa-minus-circle"></i></a>
-                  <div id="studentfaq3" class="collapse" data-parent="#faq-list">
-                    <p>
-                      A mentor/point of contact and a team for their ideas. An understanding of what a hackathon is,
-                      experience in both COMM and CS and their conjunction. A market plan and a CS outline for building
-                      their application, free lunch, and potentially extra credit for their classes.
-
-                      Teams will also have the opportunity to win seed money to bring their idea to life.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#studentfaq2" class="collapsed">What should students be bringing to
-                    this event?<i class="fa fa-minus-circle"></i></a>
-                  <div id="studentfaq2" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Ideas, if they have them!
-                    </p>
-                  </div>
-                </li>
-
-
-              </ul>
+          <li class="run__stop">
+            <p class="run__time"><time>12:00<span>pm</span></time><span class="run__dash">&ndash;</span><time>1:00<span>pm</span></time>
+            </p>
+            <div class="run__body">
+              <h3>Lunch</h3>
+              <p>Served in the Rice Hall basement.</p>
             </div>
-
-          </div>
-
-          <!-- End Student FAQ -->
-
-          <!-- Mentor FAQ -->
-
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="mentorfaq">
-
-            <div class="col-lg-12">
-              <ul id="faq-list">
-
-
-                <li>
-                  <a data-toggle="collapse" href="#mentorfaq3" class="collapsed">What is expected of mentors (including
-                    time commitment, additional prep, after the ideathon support)?<i class="fa fa-minus-circle"></i></a>
-                  <div id="mentorfaq3" class="collapse" data-parent="#faq-list">
-                    <p>
-                      We would love for mentors to participate for a minimum of two hours, but welcome them to be active
-                      for longer. We would also love to have mentors give talks or conduct workshops, if they are
-                      interested. We expect mentors to have 20-30 min meetings with each team they mentor and to
-                      maintain however much contact teams would like to have after the ideathon.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#mentorfaq4" class="collapsed">How are mentors assigned?<i
-                      class="fa fa-minus-circle"></i></a>
-                  <div id="mentorfaq4" class="collapse" data-parent="#faq-list">
-                    <p>
-                      We will not be assigning mentors. Instead, mentors would be sitting in the Davis Commons where
-                      teams can come and ask questions like office hours style. Mentors are welcome to walk around to
-                      individual teams if they prefer to do so.
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
+          </li>
+          <li class="run__stop">
+            <p class="run__time"><time>1:30<span>pm</span></time></p>
+            <div class="run__body">
+              <h3>Founders&rsquo; Fair</h3>
+              <p>Meet founders and hear what they are building. Rice 032.</p>
             </div>
-
-          </div>
-
-          <!-- End Mentor FAQ -->
-
-          <!-- Sponsor FAQ-->
-
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="sponsorfaq">
-
-            <div class="col-lg-12">
-              <ul id="faq-list">
-
-
-                <li>
-                  <a data-toggle="collapse" href="#sponsorfaq2" class="collapsed">What can sponsors get out of
-                    sponsoring us?<i class="fa fa-minus-circle"></i></a>
-                  <div id="sponsorfaq2" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Sponsors can acquaint themselves with UVA students who are passionate about a cool idea with the
-                      capability to execute on it. They can also develop relationships with UVA clubs, especially VVF
-                      and HooHacks. They can also help foster entrepreneurship at UVA.
-
-                      Contact us for more information about sponsoring our event.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#sponsorfaq3" class="collapsed">What do we want out of sponsors?<i
-                      class="fa fa-minus-circle"></i></a>
-                  <div id="sponsorfaq3" class="collapse" data-parent="#faq-list">
-                    <p>
-                      We would like sponsors to provide us with mentors and/or speakers to give talks/conduct workshops.
-                      We would also love it if our attendees could get to form connections with the sponsors for
-                      internships, or other learning opportunities.
-                    </p>
-                  </div>
-                </li>
-
-
-              </ul>
+          </li>
+          <li class="run__stop run__stop--mark">
+            <p class="run__time"><time>4:30<span>pm</span></time></p>
+            <div class="run__body">
+              <h3>Pitch decks due</h3>
+              <p>Teams submit their slides, rehearse the pitch, and take a break for snacks in the Rice Hall
+                basement.</p>
             </div>
+          </li>
+          <li class="run__stop">
+            <p class="run__time"><time>5:00<span>pm</span></time><span class="run__dash">&ndash;</span><time>7:00<span>pm</span></time>
+            </p>
+            <div class="run__body">
+              <h3>Pitches and judging</h3>
+              <p>Every team presents its idea to the panel and answers questions from the judges.</p>
+            </div>
+          </li>
+          <li class="run__stop">
+            <p class="run__time"><time>7:00<span>pm</span></time></p>
+            <div class="run__body">
+              <h3>Closing ceremony and awards</h3>
+              <p>We close the day by recognizing the work of every team and announcing the winners.</p>
+            </div>
+          </li>
+        </ol>
 
-          </div>
-
-          <!-- End Sponsor FAQ -->
-
-
-        </div>
-
-
-
+        <p class="run__note">Mentors are seated in Davis Commons through the afternoon. Teams come to them, office
+          hours style, rather than being assigned.</p>
       </div>
-
     </section>
 
-    <!--==========================
-      Speakers Section
-    ============================-->
-
-    <!--
-    <section id="speakers" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Event Speakers</h2>
-          <p>Here are some of our speakers</p>
+    <section class="section on-paper" id="faq" aria-labelledby="faq-title">
+      <div class="shell">
+        <div class="lede-block">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="h2" id="faq-title">Common questions</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Brenden Legros</a></h3>
-                <p>Quas alias incidunt</p>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Questions by audience">
+            <button class="tabs__tab" role="tab" id="tab-students" aria-controls="panel-students"
+              aria-selected="true">Students</button>
+            <button class="tabs__tab" role="tab" id="tab-mentors" aria-controls="panel-mentors" aria-selected="false"
+              tabindex="-1">Mentors</button>
+            <button class="tabs__tab" role="tab" id="tab-sponsors" aria-controls="panel-sponsors" aria-selected="false"
+              tabindex="-1">Sponsors</button>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
-                <p>Consequuntur odio aut</p>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-students" aria-labelledby="tab-students" tabindex="0">
+            <details class="qa">
+              <summary>Who can take part?</summary>
+              <div class="qa__body">
+                <p>Every UVA student is welcome, in any school and any year. You do not need to have a team to register. Teams tend to mix a technical
+                  background with a business one, and the team building workshop is there to make that pairing
+                  happen.</p>
               </div>
-            </div>
+            </details>
+            <details class="qa">
+              <summary>Do I need to code or build a prototype?</summary>
+              <div class="qa__body">
+                <p>No. The Ideathon is about the idea, not the build. Teams spend the day turning one idea into
+                  something they can defend: who it is for, why someone would pay for it, and roughly how it would
+                  be made. Teams that win seed funding go on to build afterwards.</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>What do students get out of the day?</summary>
+              <div class="qa__body">
+                <p>You leave with a mentor and a point of contact, a team for your idea, a market plan, and an
+                  outline of how the idea would be built. Breakfast and lunch are provided, some courses give
+                  extra credit for taking part, and the strongest teams win seed money to take the idea
+                  further.</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>What should I bring?</summary>
+              <div class="qa__body">
+                <p>An idea, if you have one. If you do not, the team building workshop will place you on a team. A
+                  laptop is useful for putting slides together. Nothing else is required.</p>
+              </div>
+            </details>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
-                <p>Fugiat laborum et</p>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-mentors" aria-labelledby="tab-mentors" tabindex="0" hidden>
+            <details class="qa">
+              <summary>What is expected of mentors?</summary>
+              <div class="qa__body">
+                <p>We ask mentors for a minimum of two hours, and they are welcome to stay longer. Mentors meet each
+                  team they advise for twenty to thirty minutes and stay in touch afterwards as much as the team
+                  would like. Mentors are also welcome to give a talk or run a workshop.</p>
               </div>
-            </div>
+            </details>
+            <details class="qa">
+              <summary>How are mentors assigned?</summary>
+              <div class="qa__body">
+                <p>Mentors are not assigned to teams. They sit in Davis Commons and teams come to them, office hours
+                  style. Mentors who would rather walk the room and visit teams directly are welcome to do
+                  that instead.</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>How do I sign up to mentor?</summary>
+              <div class="qa__body">
+                <p>Write to
+                  <a href="mailto:ideathon@hoohacks.io?subject=Mentoring%20at%20the%202026%20Ideathon">ideathon@hoohacks.io</a>
+                  with your background and the hours that suit you. We will send the schedule and the details ahead
+                  of the event.</p>
+              </div>
+            </details>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Jack Christiansen</a></h3>
-                <p>Debitis iure vero</p>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-sponsors" aria-labelledby="tab-sponsors" tabindex="0"
+            hidden>
+            <details class="qa">
+              <summary>What do sponsors get out of the Ideathon?</summary>
+              <div class="qa__body">
+                <p>Sponsors meet UVA students who are serious about a good idea and capable of executing on it.
+                  They also build relationships with the UVA organizations behind the event, including the Virginia
+                  Venture Fund and HooHacks, and help grow entrepreneurship at UVA.</p>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Alejandrin Littel</a></h3>
-                <p>Qui molestiae natus</p>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
+            </details>
+            <details class="qa">
+              <summary>What do you ask of sponsors?</summary>
+              <div class="qa__body">
+                <p>We ask sponsors to send mentors and speakers for talks or workshops. We also hope attendees come
+                  away with connections that lead to internships and other opportunities.</p>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Willow Trantow</a></h3>
-                <p>Non autem dicta</p>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
+            </details>
+            <details class="qa">
+              <summary>How do we get involved for 2026?</summary>
+              <div class="qa__body">
+                <p>Write to
+                  <a href="mailto:ideathon@hoohacks.io?subject=Ideathon%202026%20sponsorship">ideathon@hoohacks.io</a>.
+                  We will send the sponsorship options for the 2026 edition and answer any questions about the
+                  format.</p>
               </div>
-            </div>
+            </details>
           </div>
         </div>
       </div>
-
     </section>
-    -->
-
-    <!--==========================
-      Subscribe Section
-    ============================-->
-
-    <!--    THIS WAS REMOVED FROM ORIGINAL SITE     -->
-
-
-    <!--==========================
-      Buy Ticket Section
-    ============================-->
-
-    <!--    THIS WAS REMOVED FROM ORIGINAL SITE     -->
 
   </main>
 
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer" style="padding-bottom: 15px; padding-top: 15px">
-    <section id="contact" style="padding: 0px;">
-
-
-
-      <div class="container">
-        <!-- <div class="section-header" style="margin-bottom: 6px; padding-top: 6px; padding-bottom: 6px;"> -->
-        <!-- <div class="row" style="margin: 0px; justify-content: center;">
-            <a href="mailto:hackathon.virginia@gmail.com"><img src="img/mail.png"
-               style="width: 16px; height: 16px; margin-top:5px; margin-right:4px;"></a>
-          p style="color: white; padding-right: 6px;">Contact:</p>
-          <p><a href="mailto:hackathon.virginia@gmail.com">hackathon.virginia@gmail.com</a></p>
-
-        </div>
-       -->
-        <div class="social-links">
-          <center>
-            <a href="https://facebook.com/hoohacks" class="facebook mx-1"><i class="fa fa-facebook contactIcon"></i></a>
-            <a href="https://twitter.com/hoohacks" class="twitter mx-1"><i class="fa fa-twitter contactIcon"></i></a>
-            <a href="https://instagram.com/hoohacks" class="instagram mx-1"><i
-                class="fa fa-instagram contactIcon"></i></a>
-            <a href="mailto:ideathon@hoohacks.io" class="instagram mx-1"><i class="fa fa-envelope contactIcon"></i></a>
-          </center>
-        </div>
-        <!-- </div> -->
-        <div class="copyright" style="padding-top: 0px; ">
-          &copy; Copyright <strong>HooHacks</strong>. All Rights Reserved
-        </div>
-        <div class="credits" style="">
-          <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  <footer class="footer on-ink" id="contact">
+    <div class="shell">
+      <div class="footer__top">
+        <img class="footer__wordmark" src="img/wordmark-reverse.png" alt="Ideathon" width="768" height="227"
+          loading="lazy">
+        <div class="footer__cta">
+          <p class="footer__pitch">The 2026 Ideathon is on Sunday, October 25. Applications are open now, and
+            mentors and sponsors can get in touch any time.</p>
+          <div class="footer__buttons">
+            <a class="btn" href="https://hoohacks.github.io/idea-x/">Register / Sign in</a>
+            <a class="btn btn--ghost" href="mailto:ideathon@hoohacks.io">Email the team</a>
+          </div>
         </div>
       </div>
-    </section>
-  </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+      <div class="footer__bottom">
+        <ul class="footer__links">
+          <li><a href="mailto:ideathon@hoohacks.io">ideathon@hoohacks.io</a></li>
+          <li><a href="https://instagram.com/hoohacks" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/hoohacks" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://twitter.com/hoohacks" target="_blank" rel="noopener">Twitter</a></li>
+          <li><a href="https://hoohacks.io" target="_blank" rel="noopener">hoohacks.io</a></li>
+        </ul>
+        <p class="footer__legal">&copy; <span id="year">2026</span> HooHacks. Charlottesville, Virginia.</p>
+      </div>
+    </div>
+  </footer>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/venobox/venobox.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v8.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat" attribution=setup_tool page_id="223912674481700" theme_color="#0084ff"
-    greeting_dialog_display="fade">
-  </div>
+  <script src="js/site.js" defer></script>
 </body>
 
 </html>
