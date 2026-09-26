@@ -71,6 +71,51 @@
     });
   });
 
+  /* --- Live run of show ------------------------------------------------- */
+
+  // On event day, mark the stop that is happening now (Charlottesville time).
+  // Any other day, nothing is marked.
+  var run = document.querySelector(".run[data-date]");
+
+  function toMinutes(hhmm) {
+    var p = hhmm.split(":");
+    return Number(p[0]) * 60 + Number(p[1]);
+  }
+
+  function markNow() {
+    var parts = {};
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "America/New_York",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hourCycle: "h23"
+    })
+      .formatToParts(new Date())
+      .forEach(function (p) {
+        parts[p.type] = p.value;
+      });
+
+    var today = parts.year + "-" + parts.month + "-" + parts.day;
+    var now = Number(parts.hour) * 60 + Number(parts.minute);
+    var live = today === run.dataset.date && now < toMinutes(run.dataset.end);
+    var current = null;
+
+    run.querySelectorAll(".run__stop").forEach(function (stop) {
+      if (live && toMinutes(stop.dataset.start) <= now) current = stop;
+    });
+    run.querySelectorAll(".run__stop").forEach(function (stop) {
+      stop.classList.toggle("run__stop--now", stop === current);
+    });
+  }
+
+  if (run) {
+    markNow();
+    setInterval(markNow, 60000);
+  }
+
   /* --- Scroll reveal ---------------------------------------------------- */
 
   var groups = [

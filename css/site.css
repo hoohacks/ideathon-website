@@ -764,7 +764,7 @@ dl {
   border: 1px solid var(--chalk);
 }
 
-.run__stop--mark .run__body::before {
+.run__stop--now .run__body::before {
   background: var(--crimson);
   border-color: var(--crimson);
   box-shadow: 0 0 0 5px rgba(248, 34, 73, 0.18);
