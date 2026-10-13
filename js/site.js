@@ -70,6 +70,89 @@
       });
     });
   });
+  
+  /* --- FAQ toggle display  --------------------------------------------------- */
+
+  var toggle = Array.from(document.querySelectorAll(".qa"), function (question) {
+    question.classList.toggle("is-expanded", question.open);
+
+    return {
+      question: question,
+      body: question.querySelector(".qa__body"),
+      expanded: question.open,
+      animation: null
+    };
+  });
+
+  function setExpanded(item, expanded) {
+    if (item.expanded === expanded) return;
+
+    var question = item.question;
+    var body = item.body;
+
+    var startHeight = question.open ? body.getBoundingClientRect().height : 0;
+    var startStyles = getComputedStyle(body);
+    var startOpacity = question.open ? startStyles.opacity : "0";
+    var startPadding = question.open ? startStyles.paddingBottom : "0px";
+
+    if (item.animation) {
+      item.animation.cancel();
+      item.animation = null;
+    }
+
+    item.expanded = expanded;
+    question.classList.toggle("is-expanded", expanded);
+
+    if (reduced) {
+      question.open = expanded;
+      return;
+    }
+
+    question.open = true;
+
+    var endHeight = expanded ? body.getBoundingClientRect().height : 0;
+    var endPadding = expanded ? getComputedStyle(body).paddingBottom : "0px";
+
+    item.animation = body.animate(
+      [
+        {
+          height: startHeight + "px",
+          opacity: startOpacity,
+          paddingBottom: startPadding
+        },
+        {
+          height: endHeight + "px",
+          opacity: expanded ? "1" : "0",
+          paddingBottom: endPadding
+        }
+      ],
+      {
+        duration: 300,
+        easing: getComputedStyle(question).getPropertyValue("--ease").trim(),
+        fill: "both"
+      }
+    );
+
+    item.animation.onfinish = function () {
+      question.open = item.expanded;
+      item.animation.cancel();
+      item.animation = null;
+    };
+  }
+
+  toggle.forEach(function (item) {
+    item.question.querySelector("summary").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      var shouldOpen = !item.expanded;
+
+      toggle.forEach(function (other) {
+        if (other !== item) setExpanded(other, false);
+      });
+
+      setExpanded(item, shouldOpen);
+    });
+  });
 
   /* --- Live run of show ------------------------------------------------- */
 
