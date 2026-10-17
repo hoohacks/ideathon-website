@@ -1130,6 +1130,47 @@ dl {
   }
 }
 
+/* ------------------------------------------------------- Back to top -- */
+
+.back-to-top {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  background: #f82249;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  right: 2rem;
+  bottom: 2rem;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  padding-top: 4px;
+}
+
+.back-to-top:focus {
+  background: #e0072f;
+  color: #fff;
+  outline: 2px solid #e0072f;
+  outline-offset: 3px;
+}
+
+.back-to-top:hover {
+  background: #e0072f;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
 /* ---------------------------------------------------- Reduced motion -- */
 
 @media (prefers-reduced-motion: reduce) {
