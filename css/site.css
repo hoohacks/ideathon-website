@@ -1149,13 +1149,14 @@ dl {
 
 .back-to-top i {
   font-size: 24px;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 .back-to-top:focus {
   background: #e0072f;
   color: #fff;
-  outline: none;
+  outline: 2px solid #e0072f;
+  outline-offset: 3px;
 }
 
 .back-to-top:hover {
