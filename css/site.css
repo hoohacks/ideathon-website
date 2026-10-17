@@ -1134,15 +1134,17 @@ dl {
 
 .back-to-top {
   position: fixed;
+  pointer-events: none;
+  opacity: 0;
   background: #f82249;
   color: #fff;
   width: 40px;
   height: 40px;
   text-align: center;
   border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s ease-in-out;
+  right: 2rem;
+  bottom: 2rem;
+  transition: opacity 200ms ease, transform 200ms ease;
 }
 
 .back-to-top i {
@@ -1161,6 +1163,12 @@ dl {
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
 
 /* ---------------------------------------------------- Reduced motion -- */
 

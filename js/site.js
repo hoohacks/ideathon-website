@@ -8,6 +8,17 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  /* --- Back to top ------------------------------------------------------ */
+
+  var backToTop = document.getElementsByClassName("back-to-top")[0];
+
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: reduced ? "auto" : "smooth"
+    });
+  });
+
   /* --- Masthead ground swap --------------------------------------------- */
 
   var masthead = document.getElementById("masthead");
@@ -15,6 +26,17 @@
   function onScroll() {
     // Off the ink hero, the bar takes the paper ground and dark type.
     masthead.classList.toggle("is-stuck", window.scrollY > 40);
+
+    // Back to top
+    if (window.scrollY > 400) {
+      backToTop.style.opacity = "1";
+      backToTop.style.pointerEvents = "auto";
+      backToTop.style.transform = "scale(1)";
+    } else {
+      backToTop.style.opacity = "0";
+      backToTop.style.pointerEvents = "none";
+      backToTop.style.transform = "scale(0.9)";
+    }
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
